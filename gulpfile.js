@@ -4,6 +4,7 @@
 // Load plugins
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const plumber = require('gulp-plumber');
 
 
 // Pathes here
@@ -18,6 +19,7 @@ function css() {
   return (
     gulp
         .src(pathes.styles.src)
+        .pipe(plumber())
         .pipe(sass({outputStyle: 'expanded'}))
         .on('error', sass.logError)
         .pipe(gulp.dest(pathes.styles.dest))
@@ -25,6 +27,8 @@ function css() {
 }
 
 function watch() {
+  css();
+
   gulp.watch(pathes.styles.src, css);
 }
 

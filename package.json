@@ -21,5 +21,8 @@
     "eslint-config-google": "^0.14.0",
     "gulp": "github:gulpjs/gulp",
     "gulp-sass": "^4.1.0"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1"
   }
 }
