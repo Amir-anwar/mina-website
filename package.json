@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Amir-anwar/mina-website/issues"
   },
-  "homepage": "https://github.com/Amir-anwar/mina-website#readme"
+  "homepage": "https://github.com/Amir-anwar/mina-website#readme",
+  "devDependencies": {
+    "eslint": "^7.3.0",
+    "eslint-config-google": "^0.14.0"
+  }
 }
