@@ -5,6 +5,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const plumber = require('gulp-plumber');
+const rename = require('gulp-rename');
 
 
 // Pathes here
@@ -23,6 +24,7 @@ function css() {
         .pipe(sass({outputStyle: 'expanded'}))
         .on('error', sass.logError)
         .pipe(gulp.dest(pathes.styles.dest))
+        .pipe(rename({suffix: '.min'}))
   );
 }
 
