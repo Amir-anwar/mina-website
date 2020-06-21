@@ -9,6 +9,7 @@ const rename = require('gulp-rename');
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
 
 
 // Pathes here
@@ -23,12 +24,15 @@ function css() {
   return (
     gulp
         .src(pathes.styles.src)
+        .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass({outputStyle: 'expanded'}))
         .on('error', sass.logError)
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(pathes.styles.dest))
-        .pipe(rename({ suffix: '.min'}))
+        .pipe(rename({suffix: '.min'}))
         .pipe(postcss([autoprefixer(), cssnano()]))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest(pathes.styles.dest))
   );
 }
