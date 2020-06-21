@@ -17,6 +17,7 @@ const pathes = {
   styles: {
     src: 'scss/**/*.scss',
     dest: 'css/',
+    maps: 'maps',
   },
 };
 
@@ -24,15 +25,14 @@ function css() {
   return (
     gulp
         .src(pathes.styles.src)
-        .pipe(sourcemaps.init())
         .pipe(plumber())
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}))
         .on('error', sass.logError)
-        .pipe(sourcemaps.write())
         .pipe(gulp.dest(pathes.styles.dest))
         .pipe(rename({suffix: '.min'}))
         .pipe(postcss([autoprefixer(), cssnano()]))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write(pathes.styles.maps))
         .pipe(gulp.dest(pathes.styles.dest))
   );
 }
