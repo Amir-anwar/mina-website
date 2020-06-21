@@ -19,6 +19,7 @@
   "devDependencies": {
     "eslint": "^7.3.0",
     "eslint-config-google": "^0.14.0",
-    "gulp": "github:gulpjs/gulp"
+    "gulp": "github:gulpjs/gulp",
+    "gulp-sass": "^4.1.0"
   }
 }
