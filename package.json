@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Amir-anwar/mina-website#readme",
   "devDependencies": {
     "eslint": "^7.3.0",
-    "eslint-config-google": "^0.14.0"
+    "eslint-config-google": "^0.14.0",
+    "gulp": "github:gulpjs/gulp"
   }
 }
