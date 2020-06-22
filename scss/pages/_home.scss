@@ -36,15 +36,41 @@
     }
 
     &__arrows {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      width: 100%;
-      transform: translateY(-50%);
-
       .glide__arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        z-index: 2;
+        background-color: transparent;
+        opacity: 1;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+        transform: translateY(-50%);
+        line-height: 1;
+        border: none;
+        opacity: .5;
+
+        &:focus { outline: none; }
+        
+        &:hover {
+          opacity: 1;
+        }
+
+        &--left {
+          left: 1rem;
+          transform: translateY(-50%) rotate(180deg);
+        }
+
+        &--right {
+          right: 1rem;
+        }
+
+        img {
+          width: 2.5rem;
+        }
 
       }
+
     }
 
   }

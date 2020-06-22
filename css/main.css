@@ -401,95 +401,6 @@ template {
   direction: rtl;
 }
 
-.glide__arrow {
-  position: absolute;
-  display: block;
-  top: 50%;
-  z-index: 2;
-  color: white;
-  text-transform: uppercase;
-  padding: 9px 12px;
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  text-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.1);
-  opacity: 1;
-  cursor: pointer;
-  transition: opacity 150ms ease, border 300ms ease-in-out;
-  transform: translateY(-50%);
-  line-height: 1;
-}
-
-.glide__arrow:focus {
-  outline: none;
-}
-
-.glide__arrow:hover {
-  border-color: white;
-}
-
-.glide__arrow--left {
-  left: 2em;
-}
-
-.glide__arrow--right {
-  right: 2em;
-}
-
-.glide__arrow--disabled {
-  opacity: 0.33;
-}
-
-.glide__bullets {
-  position: absolute;
-  z-index: 2;
-  bottom: 2em;
-  left: 50%;
-  display: inline-flex;
-  list-style: none;
-  transform: translateX(-50%);
-}
-
-.glide__bullet {
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 9px;
-  height: 9px;
-  padding: 0;
-  border-radius: 50%;
-  border: 2px solid transparent;
-  transition: all 300ms ease-in-out;
-  cursor: pointer;
-  line-height: 0;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
-  margin: 0 0.25em;
-}
-
-.glide__bullet:focus {
-  outline: none;
-}
-
-.glide__bullet:hover, .glide__bullet:focus {
-  border: 2px solid white;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
-.glide__bullet--active {
-  background-color: white;
-}
-
-.glide--swipeable {
-  cursor: grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
-}
-
-.glide--dragging {
-  cursor: grabbing;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing;
-}
-
 html {
   box-sizing: border-box;
 }
@@ -526,10 +437,38 @@ html {
   background-image: url(/images/slider/slider-m-3.jpg);
 }
 
-.slider .glide__arrows {
+.slider .glide__arrows .glide__arrow {
   position: absolute;
+  display: block;
   top: 50%;
-  right: 0;
-  width: 100%;
+  z-index: 2;
+  background-color: transparent;
+  opacity: 1;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
   transform: translateY(-50%);
+  line-height: 1;
+  border: none;
+  opacity: .5;
+}
+
+.slider .glide__arrows .glide__arrow:focus {
+  outline: none;
+}
+
+.slider .glide__arrows .glide__arrow:hover {
+  opacity: 1;
+}
+
+.slider .glide__arrows .glide__arrow--left {
+  left: 1rem;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.slider .glide__arrows .glide__arrow--right {
+  right: 1rem;
+}
+
+.slider .glide__arrows .glide__arrow img {
+  width: 2.5rem;
 }
