@@ -1,0 +1,51 @@
+.slider {
+  
+
+  .glide {
+
+    &__track {
+
+      .glide__slides {
+        margin: 0;
+        
+        .glide__slide {
+          .image {
+            height: 100vh;
+            width: 100vw;
+            background: {
+              size: cover;
+              attachment: fixed;
+              position: center;
+            }
+
+            &1 {
+              background-image: url(/images/slider/slider-m-1.png);
+            }
+
+            &2 {
+              background-image: url(/images/slider/slider-m-2.png);
+            }
+
+            &3 {
+              background-image: url(/images/slider/slider-m-3.jpg);
+            }
+
+          }
+        }
+      }
+    }
+
+    &__arrows {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 100%;
+      transform: translateY(-50%);
+
+      .glide__arrow {
+
+      }
+    }
+
+  }
+}
