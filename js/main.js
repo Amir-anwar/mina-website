@@ -1,2 +1,8 @@
 // extention set up
-new Glide('.glide').mount();
+const glide = new Glide('.glide', {
+  type: 'carousel',
+  autoplay: 3000,
+  hoverpause: false,
+});
+
+glide.mount();
