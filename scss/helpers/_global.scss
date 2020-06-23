@@ -6,6 +6,47 @@ html {
   box-sizing: inherit;
   &::before,
   &::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
   }
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media #{$upTaplet} {
+    width: 750px;
+  };
+
+    @media #{$upSMDesktop} {
+    width: 970px;
+  };
+
+    @media #{$upLGDesktop} {
+    width: 1170px;
+  };
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
