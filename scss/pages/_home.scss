@@ -1,0 +1,76 @@
+.slider {
+
+  .glide {
+
+    &__track {
+
+      .glide__slides {
+        margin: 0;
+        
+        .glide__slide {
+          .image {
+            height: 100vh;
+            width: 100vw;
+            background: {
+              size: cover;
+              attachment: fixed;
+              position: center;
+            }
+
+            &1 {
+              background-image: url(/images/slider/slider-m-1.png);
+            }
+
+            &2 {
+              background-image: url(/images/slider/slider-m-2.png);
+            }
+
+            &3 {
+              background-image: url(/images/slider/slider-m-3.jpg);
+            }
+
+          }
+        }
+      }
+    }
+
+    &__arrows {
+      .glide__arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        z-index: 2;
+        background-color: transparent;
+        opacity: 1;
+        cursor: pointer;
+        transition: all 150ms ease-in-out;
+        transform: translateY(-50%);
+        line-height: 1;
+        border: none;
+        opacity: .5;
+
+        &:focus { outline: none; }
+        
+        &:hover {
+          opacity: 1;
+        }
+
+        &--left {
+          left: 1rem;
+          transform: translateY(-50%) rotate(180deg);
+        }
+
+        &--right {
+          right: 1rem;
+        }
+
+        img {
+          width: 2.5rem;
+        }
+
+      }
+
+    }
+
+  }
+}
