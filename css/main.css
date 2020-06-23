@@ -418,6 +418,29 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -443,29 +466,41 @@ body {
   }
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-}
-
 .navbar-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 0;
+  z-index: 2;
+}
+
+.navbar-container .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-container .container .menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+}
+
+.navbar-container .container .menu-btn .btn-line {
+  display: block;
+  width: 38px;
+  height: 3px;
+  margin: 0 0 6.2px;
+  border-radius: 15%;
+  background-color: #000;
+  transition: all .3s ease-out;
+}
+
+.navbar-container .container .menu-btn .btn-line:nth-of-type(2) {
+  width: 27px;
 }
 
 .slider .glide__track .glide__slides {
