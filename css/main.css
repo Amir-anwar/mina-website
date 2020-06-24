@@ -493,7 +493,7 @@ a {
   position: absolute;
   z-index: 3;
   right: 35px;
-  top: 50px;
+  top: 46px;
   cursor: pointer;
   transition: all .3s ease-out;
 }
