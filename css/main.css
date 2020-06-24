@@ -480,11 +480,11 @@ a {
   justify-content: center;
 }
 
-.navbar-container .container .menu-branding {
+.navbar-container .container .menu-branding--out {
   width: 160px;
 }
 
-.navbar-container .container .menu-branding a img {
+.navbar-container .container .menu-branding--out a img {
   width: 100%;
   height: 100%;
 }
