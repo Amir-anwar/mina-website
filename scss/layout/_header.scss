@@ -19,7 +19,7 @@
         }
       }
     }
-    
+
     .menu-btn {
       position: absolute;
       z-index: 3;
@@ -27,7 +27,7 @@
       top: 46px;
       cursor: pointer;
       @include easeout;
-      
+
       .btn-line {
         display: block;
         width: 36px;
@@ -36,9 +36,28 @@
         border-radius: 1.5px;
         background-color: #000;
         @include easeout;
-        
+
         &:nth-of-type(2) {
           width: 28px;
+        }
+      }
+
+      // rotate into X with menu btn
+      &.close {
+        transform: rotate(180deg) translateY(5px);
+
+        .btn-line {
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 5px);
+          }
+
+          &:nth-child(2) {
+            width: 0;
+          }
+
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(9px, -10px);
+          }
         }
       }
     }

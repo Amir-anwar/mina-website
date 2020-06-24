@@ -512,6 +512,22 @@ a {
   width: 28px;
 }
 
+.navbar-container .container .menu-btn.close {
+  transform: rotate(180deg) translateY(5px);
+}
+
+.navbar-container .container .menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 5px);
+}
+
+.navbar-container .container .menu-btn.close .btn-line:nth-child(2) {
+  width: 0;
+}
+
+.navbar-container .container .menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -10px);
+}
+
 .navbar-container .container .menu {
   display: none;
 }
