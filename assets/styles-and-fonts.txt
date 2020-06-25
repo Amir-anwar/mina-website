@@ -9,4 +9,6 @@
 #E9E9E9
 
 open sans : regular - bold
+font-family: 'Open Sans', sans-serif;
 sorts mill goudy
+font-family: 'Sorts Mill Goudy', serif;
