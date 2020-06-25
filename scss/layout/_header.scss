@@ -2,13 +2,12 @@
 @import "../helpers/mixins";
 
 .navbar-container {
-  perspective: 600px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 0;
-  z-index: 2;
+  z-index: 4;
 
   .container {
     display: flex;
@@ -39,7 +38,7 @@
         height: 3px;
         margin: 0 0 6.9px;
         border-radius: 1.5px;
-        background-color: #000;
+        background-color: $whiteColor;
         @include easeout;
 
         &:nth-of-type(2) {
@@ -52,6 +51,7 @@
         transform: rotate(180deg) translateY(5px);
 
         .btn-line {
+          background-color: $whiteColor;
           &:nth-child(1) {
             transform: rotate(45deg) translate(4px, 5px);
           }
@@ -67,29 +67,22 @@
       }
     }
   }
-  .menu {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    background: $darkColor;
-    opacity: 0.96;
-    z-index: 3;
-    visibility: hidden;
-    @include easeout;
-    transform: translate3d(100%, 0, 0);
+}
 
-    .menu-nav,
-    .nav-item {
-      mix-blend-mode: difference;
-    }
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  background: $darkColor;
+  opacity: 0.9;
+  z-index: 3;
+  width: 0;
+  @include easeout;
 
-    &.show {
-      @include easeout;
-      visibility: visible;
-      transform: translate3d(0, 0, 0);
-    }
+  &.show {
+    width: 100%;
   }
 }
