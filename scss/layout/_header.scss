@@ -1,4 +1,8 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
 .navbar-container {
+  perspective: 600px;
   position: absolute;
   top: 0;
   left: 0;
@@ -12,6 +16,7 @@
 
     .menu-branding--out {
       width: 160px;
+      z-index: 3;
       a {
         img {
           width: 100%;
@@ -22,7 +27,7 @@
 
     .menu-btn {
       position: absolute;
-      z-index: 3;
+      z-index: 4;
       right: 35px;
       top: 46px;
       cursor: pointer;
@@ -61,9 +66,30 @@
         }
       }
     }
-
   }
   .menu {
-    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    background: $darkColor;
+    opacity: 0.96;
+    z-index: 3;
+    visibility: hidden;
+    @include easeout;
+    transform: translate3d(100%, 0, 0);
+
+    .menu-nav,
+    .nav-item {
+      mix-blend-mode: difference;
+    }
+
+    &.show {
+      @include easeout;
+      visibility: visible;
+      transform: translate3d(0, 0, 0);
+    }
   }
 }

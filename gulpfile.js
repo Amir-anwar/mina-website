@@ -52,7 +52,7 @@ function css() {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'expanded'}))
-        // .on('error', sass.logError)
+        .on('error', sass.logError)
         .pipe(gulp.dest(pathes.styles.dest))
         .pipe(rename({suffix: '.min'}))
         .pipe(postcss([autoprefixer(), cssnano()]))
