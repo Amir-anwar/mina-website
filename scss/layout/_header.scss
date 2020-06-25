@@ -75,14 +75,47 @@
   position: fixed;
   top: 0;
   right: 0;
-  display: flex;
   background: $darkColor;
   opacity: 0.9;
   z-index: 3;
-  width: 0;
+  transform: translateX(100%);
+  overflow: hidden;
   @include easeout;
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
 
-  &.show {
-    width: 100%;
+    &.show {
+      transform: translateX(0);
+    }
+
+  .menu-nav {
+    text-align: center;
+
+    .nav-item {
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      transform: translateX(20px);
+      @include easeout;
+
+      &.show {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .nav-link {
+        color: $whiteColor;
+        text-transform: uppercase;
+        font-size: $big-text;
+      }
+
+    }
+  }
+}
+@for $x from 1 through 4 {
+  .menu .menu-nav .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 150ms;
   }
 }
