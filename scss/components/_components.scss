@@ -8,7 +8,7 @@
 
 .h2 {
   font-size: $second-h;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -19,7 +19,6 @@
   letter-spacing: 0.042rem;
 }
 
-
 .hl {
   display: block;
   height: 2px;
@@ -29,20 +28,20 @@
 }
 
 .btn {
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
   border: 1px solid $primaryColor;
-  padding: .7rem 1rem .4rem;
-  font-size: $par-size - .1rem;
+  padding: 0.7rem 1rem 0.4rem;
+  font-size: $par-size - 0.1rem;
   position: relative;
   @include easeout;
   z-index: 2;
   background-color: transparent;
 
-  &::after {
-    content: '';
+  &::before {
+    content: "";
     display: block;
     width: 30%;
     height: 3px;
@@ -52,15 +51,20 @@
     transform: translateX(-50%);
     background-color: $primaryColor;
     @include easeout;
-    z-index: 1;
+    z-index: -1;
+    animation: slidedown .5s;
   }
 
   &:hover {
     color: #fff;
-  }
-
-  &:hover .btn::after {
-    animation: slideUp .3s ease-in-out;
+    @include easeout;
+    &::before {
+      @include easeout;
+      animation-name: slideUp;
+      animation-duration: .5s;
+      animation-timing-function: ease-in-out;
+      animation-fill-mode: both;
+    }
   }
 }
 
@@ -70,6 +74,9 @@
     height: 3px;
     bottom: -2px;
   }
+  40% {
+    width: 100%;
+  }
   50% {
     width: 100%;
   }
@@ -77,5 +84,24 @@
     height: 100%;
     width: 100%;
     bottom: 0;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  60% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 30%;
+    height: 3px;
+    bottom: -2px;
   }
 }

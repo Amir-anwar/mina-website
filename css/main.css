@@ -483,7 +483,7 @@ a {
 
 .h2 {
   font-size: 1.2rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -503,12 +503,12 @@ a {
 }
 
 .btn {
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
   letter-spacing: 1px;
   text-transform: uppercase;
   display: inline-block;
   border: 1px solid #675B29;
-  padding: .7rem 1rem .4rem;
+  padding: 0.7rem 1rem 0.4rem;
   font-size: 0.9rem;
   position: relative;
   transition: all .3s ease-out;
@@ -516,8 +516,8 @@ a {
   background-color: transparent;
 }
 
-.btn::after {
-  content: '';
+.btn::before {
+  content: "";
   display: block;
   width: 30%;
   height: 3px;
@@ -527,15 +527,21 @@ a {
   transform: translateX(-50%);
   background-color: #675B29;
   transition: all .3s ease-out;
-  z-index: 1;
+  z-index: -1;
+  animation: slidedown .5s;
 }
 
 .btn:hover {
   color: #fff;
+  transition: all .3s ease-out;
 }
 
-.btn:hover .btn::after {
-  animation: slideUp .3s ease-in-out;
+.btn:hover::before {
+  transition: all .3s ease-out;
+  animation-name: slideUp;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
 }
 
 @keyframes slideUp {
@@ -544,6 +550,9 @@ a {
     height: 3px;
     bottom: -2px;
   }
+  40% {
+    width: 100%;
+  }
   50% {
     width: 100%;
   }
@@ -551,6 +560,25 @@ a {
     height: 100%;
     width: 100%;
     bottom: 0;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+  }
+  60% {
+    width: 100%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 30%;
+    height: 3px;
+    bottom: -2px;
   }
 }
 
@@ -756,4 +784,8 @@ a {
   width: 100%;
   object-fit: cover;
   height: 400px;
+}
+
+.about-me .btn {
+  margin-top: 1.5rem;
 }
