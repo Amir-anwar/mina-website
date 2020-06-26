@@ -1,36 +1,121 @@
+@import "../helpers/variables";
+@import "../helpers/mixins";
+
 .navbar-container {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: 2rem 0;
-  z-index: 2;
+  z-index: 4;
 
   .container {
     display: flex;
-    justify-content: space-between;
-    
-    .menu-btn {
-      position: absolute;
+    justify-content: center;
+
+    .menu-branding--out {
+      width: 160px;
       z-index: 3;
-      right: 35px;
-      top: 35px;
-      cursor: pointer;
-      @include easeout;
-      
-      .btn-line {
-        display: block;
-        width: 38px;
-        height: 3px;
-        margin: 0 0 6.2px;
-        border-radius: 15%;
-        background-color: #000;
-        @include easeout;
-        
-        &:nth-of-type(2) {
-          width: 27px;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
         }
       }
     }
+
+    .menu-btn {
+      position: absolute;
+      z-index: 4;
+      right: 35px;
+      top: 46px;
+      cursor: pointer;
+      @include easeout;
+
+      .btn-line {
+        display: block;
+        width: 36px;
+        height: 3px;
+        margin: 0 0 6.9px;
+        border-radius: 1.5px;
+        background-color: $whiteColor;
+        @include easeout;
+
+        &:nth-of-type(2) {
+          width: 28px;
+        }
+      }
+
+      // rotate into X with menu btn
+      &.close {
+        transform: rotate(180deg) translateY(5px);
+
+        .btn-line {
+          background-color: $whiteColor;
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 5px);
+          }
+
+          &:nth-child(2) {
+            width: 0;
+          }
+
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(9px, -10px);
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: $darkColor;
+  opacity: 0.9;
+  z-index: 3;
+  transform: translateX(100%);
+  overflow: hidden;
+  @include easeout;
+  display: flex;
+  flex-direction: column wrap;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+
+    &.show {
+      transform: translateX(0);
+    }
+
+  .menu-nav {
+    text-align: center;
+
+    .nav-item {
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      transform: translateX(20px);
+      @include easeout;
+
+      &.show {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      .nav-link {
+        color: $whiteColor;
+        text-transform: uppercase;
+        font-size: $big-text;
+      }
+
+    }
+  }
+}
+@for $x from 1 through 4 {
+  .menu .menu-nav .nav-item:nth-child(#{$x}) {
+    transition-delay: $x * 150ms;
   }
 }
