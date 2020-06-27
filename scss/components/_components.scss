@@ -105,3 +105,38 @@
     bottom: -2px;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+
+  &__item {
+    &--2 {
+      grid-row: span 2;
+    }
+    &--4 {
+      grid-row: span 2;
+    }
+    &--5 {
+      grid-row: span 2;
+    }
+    &--7 {
+      grid-row: span 2;
+    }
+    &--8 {
+      grid-row: span 2;
+    }
+    &--9 {
+      grid-row: span 2;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
