@@ -482,7 +482,7 @@ a {
 }
 
 .h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Open Sans", sans-serif;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -775,7 +775,7 @@ a {
   transform: translateY(-50%);
   line-height: 1;
   border: none;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .slider .glide__arrows .glide__arrow:focus {
@@ -826,4 +826,18 @@ a {
 
 .about-me .btn {
   margin-top: 1.5rem;
+}
+
+.featured {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+  text-align: center;
+}
+
+.featured .h2 {
+  margin-bottom: 2.5rem;
+}
+
+.featured .btn {
+  margin-top: 2.5rem;
 }
