@@ -13,19 +13,32 @@
               background-size: cover;
               width: 100vw;
               height: 100vh;
-              z-index: 999;
-              
+
               &--1 {
-                background-image: url(../images/slider/slider-m-1.jpg);     
+                background-image: url(../images/slider/slider-m-1.jpg);
                 background-position: center center;
+
+                @media #{$upSMDesktop} {
+                  background-image: url(../images/slider/slider-1.jpg);
+                  background-position: top center;
+                  background-size: 130vw;
+                }
               }
               &--2 {
-                background-image: url(../images/slider/slider-m-2.jpg);     
+                background-image: url(../images/slider/slider-m-2.jpg);
                 background-position: center center;
+
+                @media #{$upSMDesktop} {
+                  background-image: url(../images/slider/slider-2.jpg);
+                }
               }
               &--3 {
-                background-image: url(../images/slider/slider-m-3.jpg);     
+                background-image: url(../images/slider/slider-m-3.jpg);
                 background-position: center center;
+
+                @media #{$upSMDesktop} {
+                  background-image: url(../images/slider/slider-3.jpg);
+                }
               }
             }
           }
