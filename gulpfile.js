@@ -11,6 +11,9 @@ const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
 const autoprefixer = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant');
+const mozjpeg = require('imagemin-mozjpeg');
 
 // BrowserSync
 function browserSync(done) {
@@ -43,6 +46,10 @@ const pathes = {
   pages: {
     src: '*.html',
   },
+  images: {
+    src: 'images/**/*',
+    dest: 'images',
+  },
 };
 
 function css() {
@@ -70,6 +77,16 @@ function watch() {
   gulp.watch(pathes.scripts.src, reload);
 }
 
+function minImages() {
+  gulp.src(pathes.images.src)
+      .pipe(imagemin([
+        pngquant({quality: [0.5, 0.5]}),
+        mozjpeg({quality: 50}),
+      ]))
+      .pipe(gulp.dest(pathes.images.dest));
+}
+
 // export tasks
 exports.css = css;
+exports.minImages = minImages;
 exports.watch = gulp.parallel(watch, browserSync);

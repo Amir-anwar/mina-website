@@ -841,3 +841,83 @@ a {
 .featured .btn {
   margin-top: 2.5rem;
 }
+
+.footer {
+  text-align: center;
+  padding-top: 3.5rem;
+  background-color: #F2F2F2;
+}
+
+.footer .hl {
+  background-color: #675B29;
+}
+
+.footer .booking-text {
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: 3px;
+}
+
+.footer .wrapper--2 h3 {
+  font-family: "Sorts Mill Goudy", serif;
+  text-transform: uppercase;
+  margin: 2rem 0 1rem;
+}
+
+.footer .wrapper--2 .paragraph {
+  margin-top: 0;
+}
+
+.footer .wrapper--2 .contact-phone i {
+  width: 15px;
+  height: 15px;
+  top: 2.5px;
+}
+
+.footer .wrapper--2 .wrapper__contact {
+  margin: 20px 0;
+  color: #675B29;
+}
+
+.footer i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+}
+
+.footer i img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .social-media-icons {
+  display: flex;
+  width: 100px;
+  margin: 20px auto;
+  justify-content: space-around;
+}
+
+.footer .footer__nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer .footer__nav li {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.footer .wrapper--3 {
+  text-transform: uppercase;
+  color: #675B29;
+  font-size: .8rem;
+  letter-spacing: 3px;
+  padding-bottom: 20px;
+}
+
+.footer .wrapper--3 > div {
+  margin-top: 20px;
+}

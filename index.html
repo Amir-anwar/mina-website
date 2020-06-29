@@ -1,176 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mina Diab - Photography</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mina Diab - Photography</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sorts+Mill+Goudy&display=swap"
+      rel="stylesheet"
+    />
 
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sorts+Mill+Goudy&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
+  <body>
+    <header class="navbar-container">
+      <div class="container">
+        <div class="menu-branding--out">
+          <a href="#">
+            <img src="images/branding/logo-white.png" alt="mina-logo" />
+          </a>
+        </div>
 
-  <link rel="stylesheet" href="css/main.min.css">
-</head>
-
-<body>
-
-  <header class="navbar-container">
-
-    <div class="container">
-
-      <div class="menu-branding--out">
-        <a href="#">
-          <img src="images/branding/logo-white.png" alt="mina-logo">
-        </a>
+        <div class="menu-btn">
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+          <span class="btn-line"></span>
+        </div>
       </div>
+    </header>
+    <nav class="menu">
+      <ul class="menu-nav">
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a href="portfolio.html" class="nav-link">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="plans.html" class="nav-link">plans</a>
+        </li>
+      </ul>
+    </nav>
 
-      <div class="menu-btn">
-        <span class="btn-line"></span>
-        <span class="btn-line"></span>
-        <span class="btn-line"></span>
+    <div class="slider">
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+              <div class="slide__image">
+                <img
+                  src="images/slider/slider-m-1.jpg"
+                  alt="background"
+                  srcset="
+                    images/slider/slider-m-1.jpg 800w,
+                    images/slider/slider-1.jpg 1620w 
+                  "
+                  style="width:100%"
+                />
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="slide__image">
+                <img
+                  src="images/slider/slider-m-2.jpg"
+                  alt="background"
+                  srcset="
+                    images/slider/slider-m-2.jpg  800w,
+                    images/slider/slider-2.jpg   1620w
+                  "
+                  style="width:100%"
+                />
+              </div>
+            </li>
+            <li class="glide__slide">
+              <div class="slide__image">
+                <img
+                  src="images/slider/slider-m-3.jpg"
+                  alt="background"
+                  srcset="
+                    images/slider/slider-m-3.jpg  800w,
+                    images/slider/slider-3.jpg   1620w
+                  "
+                  style="width:100%"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <img src="images/icons/next.svg" alt="" />
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <img src="images/icons/next.svg" alt="" />
+          </button>
+        </div>
       </div>
-
     </div>
 
+    <div class="about-me">
+      <div class="container">
+        <div class="about-me__wrapper">
+          <h1 class="h1">Hello! I'm Mina,</h1>
+          <p class="paragraph">
+            I am a Zamalek city based wedding and Elopement Photographer. Thank
+            you for taking the time to check out my work - take a look around
+            and stay awhile!
+          </p>
+          <span class="hl"></span>
+        </div>
+        <div class="about-me__wrapper">
+          <img src="images/mina-portrait.jpg" alt="mina personal photo" />
+        </div>
+        <div class="about-me__wrapper">
+          <span class="hl"></span>
+          <h2 class="h2">
+            Zamalek City <br />
+            wedding Photographer
+          </h2>
+          <p class="paragraph">
+            I've Been a wedding Photographer for a little over 9 years now and
+            can't imagine doing anything else! Whether you're having an intimate
+            gathering with your closet friends and family or having a huge party
+            - I want to be there and give you photos that reflect you
+          </p>
+          <a href="about.html" class="btn">want to know me better</a>
+        </div>
+      </div>
+    </div>
 
-  </header>
-  <nav class="menu">
+    <div class="featured">
+      <div class="container">
+        <h2 class="h2">featured images</h2>
 
-    <ul class="menu-nav">
-      <li class="nav-item">
-        <a href="about.html" class="nav-link">About Me</a>
-      </li>
-      <li class="nav-item">
-        <a href="portfolio.html" class="nav-link">portfolio</a>
-      </li>
-      <li class="nav-item">
-        <a href="contact.html" class="nav-link">contact</a>
-      </li>
-      <li class="nav-item">
-        <a href="plans.html" class="nav-link">plans</a>
-      </li>
-    </ul>
+        <div class="grid featured__grid">
+          <div class="grid__item grid__item--1">
+            <img
+              src="images/featured-images/grid-1.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
 
-  </nav>
+          <div class="grid__item grid__item--2">
+            <img
+              src="./images/featured-images/grid-2.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
 
-  <div class="slider">
+          <div class="grid__item grid__item--3">
+            <img
+              src="./images/featured-images/grid-3.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
 
-    <div class="glide">
+          <div class="grid__item grid__item--4">
+            <img
+              src="./images/featured-images/grid-4.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
 
-      <div class="glide__track" data-glide-el="track">
-        <ul class="glide__slides">
-          <li class="glide__slide">
-            <div class="slide__image">
-              <img src="images/slider/slider-m-1.png" alt="background" srcset="">
+          <div class="grid__item grid__item--5">
+            <img
+              src="./images/featured-images/grid-5.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+
+          <div class="grid__item grid__item--6">
+            <img
+              src="./images/featured-images/grid-6.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+
+          <div class="grid__item grid__item--7">
+            <img
+              src="./images/featured-images/grid-7.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+
+          <div class="grid__item grid__item--8">
+            <img
+              src="./images/featured-images/grid-8.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+
+          <div class="grid__item grid__item--9">
+            <img
+              src="./images/featured-images/grid-9.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+
+          <div class="grid__item grid__item--10">
+            <img
+              src="./images/featured-images/grid-10.jpg"
+              alt="couple"
+              class="grid__image"
+            />
+          </div>
+        </div>
+
+        <a href="portfolio.html" class="btn">see full gallery</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer__wrapper wrapper--1">
+          <a href="contact.html" class="btn">let's chat</a>
+
+          <div class="instgram"></div>
+        </div>
+
+        <div class="footer__wrapper wrapper--2">
+          <div class="wrapper__box contact-phone">
+            <h3>let's chat</h3>
+            <p class="paragraph">send me a message</p>
+            <div class="wrapper__contact">
+              <i>
+                <img src="./images/icons/gmail.svg" alt="mail" />
+              </i>
+              <span>minadiabphotography@gmail.com</span>
             </div>
-          </li>
-          <li class="glide__slide">
-            <div class="slide__image">
-              <img src="images/slider/slider-m-2.png" alt="background" srcset="">
+            <div class="wrapper__contact">
+              <i>
+                <img src="./images/icons/whatsapp.svg" alt="whatsapp" />
+              </i>
+              <span>+20 100 001 1355</span>
             </div>
-          </li>
-          <li class="glide__slide">
-            <div class="slide__image">
-              <img src="images/slider/slider-m-3.jpg" alt="background" srcset="">
+          </div>
+
+          <span class="hl"></span>
+
+          <div class="wrapper__box">
+            <h3>Weddimg<br />Photographer</h3>
+            <p class="paragraph booking-text">
+              now booking 2020-2021 weddings
+            </p>
+          </div>
+
+          <span class="hl"></span>
+
+          <div class="wrapper__box">
+            <h3>follow along</h3>
+
+            <div class="social-media-icons">
+              <i>
+                <img src="./images/icons/instagram.svg" alt="instagram" />
+              </i>
+              <i>
+                <img src="./images/icons/facebook.svg" alt="whatsapp" />
+              </i>
+              <i>
+                <img src="./images/icons/map_marker.svg" alt="whatsapp" />
+              </i>
             </div>
-          </li>
-        </ul>
-      </div>
 
-      <div class="glide__arrows" data-glide-el="controls">
-        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-          <img src="/images/icons/next.svg" alt="">
-        </button>
-        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-          <img src="/images/icons/next.svg" alt="">
-        </button>
-      </div>
+            <ul class="footer__nav">
+              <li>
+                <a href="about.html">About Me</a>
+              </li>
+              <li>
+                <a href="portfolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a href="contact.html">contact</a>
+              </li>
+              <li>
+                <a href="plans.html">plans</a>
+              </li>
+            </ul>
+          </div>
 
-    </div>
+          <span class="hl"></span>
+        </div>
 
-  </div>
-
-  <div class="about-me">
-    <div class="container">
-      <div class="about-me__wrapper">
-        <h1 class="h1">Hello! I'm Mina,</h1>
-        <p class="paragraph">
-          I am a Zamalek city based wedding and Elopement Photographer. Thank you for taking the time to check out my
-          work - take a look around and stay awhile!
-        </p>
-        <span class="hl"></span>
-      </div>
-      <div class="about-me__wrapper">
-        <img src="images/mina-portrait.jpg" alt="mina personal photo">
-      </div>
-      <div class="about-me__wrapper">
-        <span class="hl"></span>
-        <h2 class="h2">Zamalek City <br> wedding Photographer</h2>
-        <p class="paragraph">
-          I've Been a wedding Photographer for a little over 9 years now and can't imagine doing anything else! Whether
-          you're having an intimate gathering with your closet friends and family or having a huge party - I want to be
-          there and give you photos that reflect you
-        </p>
-        <a href="about.html" class="btn">want to know me better</a>
+        <div class="footer__wrapper wrapper--3">
+          <div class="left">
+            &copy;2020 mina diab Photography
+          </div>
+          <div class="right">made with ❤️ by <a href="#">Amir Anwar</a></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="featured">
-    <div class="container">
-      <h2 class="h2">featured images</h2>
-
-      <div class="grid featured__grid">
-
-        <div class="grid__item grid__item--1">
-          <img src="images/featured-images/grid-1.png" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--2">
-          <img src="./images/featured-images/grid-2.jpg" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--3">
-          <img src="./images/featured-images/grid-3.jpg" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--4">
-          <img src="./images/featured-images/grid-4.JPG" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--5">
-          <img src="./images/featured-images/grid-5.png" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--6">
-          <img src="./images/featured-images/grid-6.jpg" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--7">
-          <img src="./images/featured-images/grid-7.JPG" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--8">
-          <img src="./images/featured-images/grid-8.jpg" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--9">
-          <img src="./images/featured-images/grid-9.png" alt="couple" class="grid__image">
-        </div>
-
-        <div class="grid__item grid__item--10">
-          <img src="./images/featured-images/grid-10.jpg" alt="couple" class="grid__image">
-        </div>
-
-      </div>
-
-      <a href="portfolio.html" class="btn">see full gallery</a>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
