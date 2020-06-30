@@ -9,6 +9,13 @@ const glide = new Glide('.glide', {
 
 glide.mount();
 
+lightbox.option({
+  'resizeDuration': 200,
+  'wrapAround': true,
+  'alwaysShowNavOnTouchDevices': true,
+  'disableScrolling': true,
+});
+
 // menu btn toggle
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
