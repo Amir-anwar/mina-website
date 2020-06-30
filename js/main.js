@@ -16,6 +16,17 @@ lightbox.option({
   'disableScrolling': true,
 });
 
+const Scrollbar = window.Scrollbar;
+
+Scrollbar.use(window.OverscrollPlugin);
+
+Scrollbar.init(document.querySelector('#my-scrollbar'), {
+  plugins: {
+    overscroll: {effect: 'glow'},
+  },
+});
+Scrollbar.initAll();
+
 // menu btn toggle
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');

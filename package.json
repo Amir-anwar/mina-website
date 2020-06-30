@@ -33,6 +33,7 @@
     "imagemin-pngquant": "^9.0.0"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "smooth-scrollbar": "^8.5.2"
   }
 }
