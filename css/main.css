@@ -1,4 +1,5 @@
-.lb-loader, .lightbox {
+.lb-loader,
+.lightbox {
   text-align: center;
   line-height: 0;
   position: absolute;
@@ -16,7 +17,7 @@ body.lb-disable-scrolling {
   z-index: 9999;
   background-color: #000;
   filter: alpha(Opacity=80);
-  opacity: .8;
+  opacity: 0.8;
   display: none;
 }
 
@@ -87,7 +88,8 @@ body.lb-disable-scrolling {
   background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
 }
 
-.lb-next, .lb-prev {
+.lb-next,
+.lb-prev {
   height: 100%;
   cursor: pointer;
   display: block;
@@ -100,10 +102,10 @@ body.lb-disable-scrolling {
   background: url(../images/prev.png) left 48% no-repeat;
   filter: alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity .6s;
-  -moz-transition: opacity .6s;
-  -o-transition: opacity .6s;
-  transition: opacity .6s;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
 .lb-nav a.lb-prev:hover {
@@ -118,10 +120,10 @@ body.lb-disable-scrolling {
   background: url(../images/next.png) right 48% no-repeat;
   filter: alpha(Opacity=0);
   opacity: 0;
-  -webkit-transition: opacity .6s;
-  -moz-transition: opacity .6s;
-  -o-transition: opacity .6s;
-  transition: opacity .6s;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
 }
 
 .lb-nav a.lb-next:hover {
@@ -182,11 +184,11 @@ body.lb-disable-scrolling {
   text-align: right;
   outline: 0;
   filter: alpha(Opacity=70);
-  opacity: .7;
-  -webkit-transition: opacity .2s;
-  -moz-transition: opacity .2s;
-  -o-transition: opacity .2s;
-  transition: opacity .2s;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
 }
 
 .lb-data .lb-close:hover {
@@ -1126,6 +1128,12 @@ a {
 
 .about-me .btn {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .about-me .about-me__wrapper:nth-of-type(2) img {
+    height: 100%;
+  }
 }
 
 @media (min-width: 992px) {

@@ -114,6 +114,16 @@
     margin-top: $section-padding - 2rem;
   }
 
+  @media #{$upTaplet} {
+      .about-me__wrapper {
+        &:nth-of-type(2) {
+          img {
+            height: 100%;
+          }
+        }
+      }
+  }
+
   @media #{$upSMDesktop} {
     .about-me-container {
       display: flex;
