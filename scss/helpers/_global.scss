@@ -67,3 +67,14 @@ a {
   };
 }
 
+.hidden-sm {
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.hidden-lg {
+  @media #{$upSMDesktop} {
+    display: none;
+  }
+}

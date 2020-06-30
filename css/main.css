@@ -476,6 +476,18 @@ a {
   }
 }
 
+@media (max-width: 991px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
 .h1 {
   letter-spacing: 4px;
   font-size: 1.7rem;
@@ -746,6 +758,41 @@ a {
 
 .menu .menu-nav .nav-item:nth-child(4) {
   transition-delay: 600ms;
+}
+
+.navbar--web {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+  color: #fff;
+}
+
+.navbar--web .nav {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar--web .nav .nav-item {
+  display: inline-block;
+}
+
+.navbar--web .nav .nav-item:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+.navbar--web .nav .nav-item .nav-link {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.navbar--web .menu-branding a img {
+  width: 350px;
 }
 
 .slider .glide__track .glide__slides {
