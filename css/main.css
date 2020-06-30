@@ -401,6 +401,16 @@ template {
   direction: rtl;
 }
 
+:root {
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
 html {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -788,7 +798,7 @@ a {
 
 .navbar--web .nav .nav-item .nav-link {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .navbar--web .menu-branding a img {
@@ -903,6 +913,32 @@ a {
 
 .about-me .btn {
   margin-top: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .about-me .about-me-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .about-me .about-me-container .about-me__wrapper {
+    flex: 1;
+  }
+  .about-me .about-me-container .about-me__wrapper:nth-of-type(2) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .about-me .about-me-container .about-me__wrapper:nth-of-type(2) img {
+    height: 100%;
+  }
+  .about-me .about-me-container .p {
+    font-size: 15px;
+    letter-spacing: 0.048rem;
+    line-height: 31px;
+  }
+  .about-me .about-me-container .hl {
+    margin-top: 2rem;
+  }
 }
 
 .featured {
