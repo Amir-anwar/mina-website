@@ -80,8 +80,8 @@ function watch() {
 function minImages() {
   gulp.src(pathes.images.src)
       .pipe(imagemin([
-        pngquant({quality: [0.5, 0.5]}),
-        mozjpeg({quality: 50}),
+        pngquant({quality: [0.75, 0.75]}),
+        mozjpeg({quality: 75}),
       ]))
       .pipe(gulp.dest(pathes.images.dest));
 }

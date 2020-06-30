@@ -12,7 +12,7 @@
 
   .booking-text {
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: 3px;
   }
 
@@ -73,13 +73,62 @@
   .wrapper--3 {
     text-transform: uppercase;
     color: $primaryColor;
-    font-size: .8rem;
+    font-size: 0.8rem;
     letter-spacing: 3px;
-
 
     padding-bottom: 20px;
     > div {
       margin-top: 20px;
+    }
+  }
+
+  @media #{$upSMDesktop} {
+
+    i {
+      width: 25px;
+      height: 25px;
+    }
+
+    .wrapper--2 {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-items: center;
+      align-items: center;
+
+      .wrapper__contact {
+        text-align: left;
+      }
+
+      .hl {
+        height: 150px;
+        margin: 0 .4rem;
+        width: 2px;
+      }
+
+      .wedding-photographer {
+        margin-top: 0;
+      }
+
+      .wrapper__box {
+        flex: 1;
+
+        &:nth-of-type(2) {
+          flex: 2;
+        }
+      }
+    }
+    .footer__nav {
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+
+      li {
+        margin-bottom: 0;
+      }
+    }
+
+    .wrapper--3 {
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <header class="navbar-container">
+    <header class="hidden-lg navbar-container">
       <div class="container">
         <div class="menu-branding--out">
           <a href="#">
@@ -29,7 +29,7 @@
         </div>
       </div>
     </header>
-    <nav class="menu">
+    <nav class="hidden-lg menu">
       <ul class="menu-nav">
         <li class="nav-item">
           <a href="about.html" class="nav-link">About Me</a>
@@ -46,47 +46,53 @@
       </ul>
     </nav>
 
+    <div class="navbar--web hidden-sm">
+      <ul class="nav container">
+        <div class="wrapper">
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="portfolio.html" class="nav-link">portfolio</a>
+          </li>
+        </div>
+
+        <div class="wrapper">
+          <div class="menu-branding">
+            <a href="#">
+              <img src="images/branding/logo-white.png" alt="mina-logo" />
+            </a>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="plans.html" class="nav-link">plans</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+
     <div class="slider">
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide">
               <div class="slide__image">
-                <img
-                  src="images/slider/slider-m-1.jpg"
-                  alt="background"
-                  srcset="
-                    images/slider/slider-m-1.jpg 800w,
-                    images/slider/slider-1.jpg 1620w 
-                  "
-                  style="width:100%"
-                />
+                <div class="bg-image bg-image--1"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="slide__image">
-                <img
-                  src="images/slider/slider-m-2.jpg"
-                  alt="background"
-                  srcset="
-                    images/slider/slider-m-2.jpg  800w,
-                    images/slider/slider-2.jpg   1620w
-                  "
-                  style="width:100%"
-                />
+                <div class="bg-image bg-image--2"></div>
               </div>
             </li>
             <li class="glide__slide">
               <div class="slide__image">
-                <img
-                  src="images/slider/slider-m-3.jpg"
-                  alt="background"
-                  srcset="
-                    images/slider/slider-m-3.jpg  800w,
-                    images/slider/slider-3.jpg   1620w
-                  "
-                  style="width:100%"
-                />
+                <div class="bg-image bg-image--3"></div>
               </div>
             </li>
           </ul>
@@ -104,7 +110,7 @@
     </div>
 
     <div class="about-me">
-      <div class="container">
+      <div class="container about-me-container">
         <div class="about-me__wrapper">
           <h1 class="h1">Hello! I'm Mina,</h1>
           <p class="paragraph">
@@ -226,11 +232,11 @@
 
     <div class="footer">
       <div class="container">
-        <div class="footer__wrapper wrapper--1">
+        <!-- <div class="footer__wrapper wrapper--1">
           <a href="contact.html" class="btn">let's chat</a>
 
           <div class="instgram"></div>
-        </div>
+        </div> -->
 
         <div class="footer__wrapper wrapper--2">
           <div class="wrapper__box contact-phone">
@@ -253,7 +259,7 @@
           <span class="hl"></span>
 
           <div class="wrapper__box">
-            <h3>Weddimg<br />Photographer</h3>
+            <h3 class="wedding-photographer">Wedding<br />Photographer</h3>
             <p class="paragraph booking-text">
               now booking 2020-2021 weddings
             </p>
@@ -276,25 +282,24 @@
               </i>
             </div>
 
-            <ul class="footer__nav">
-              <li>
-                <a href="about.html">About Me</a>
-              </li>
-              <li>
-                <a href="portfolio.html">Portfolio</a>
-              </li>
-              <li>
-                <a href="contact.html">contact</a>
-              </li>
-              <li>
-                <a href="plans.html">plans</a>
-              </li>
-            </ul>
           </div>
-
-          <span class="hl"></span>
         </div>
-
+        <ul class="footer__nav">
+          <li>
+            <a href="about.html">About Me</a>
+          </li>
+          <li>
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+          <li>
+            <a href="plans.html">plans</a>
+          </li>
+        </ul>
+        
+        <span class="hl"></span>
         <div class="footer__wrapper wrapper--3">
           <div class="left">
             &copy;2020 mina diab Photography
