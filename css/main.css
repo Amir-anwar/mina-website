@@ -983,7 +983,7 @@ a {
 
 .footer .booking-text {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
 }
 
@@ -1042,11 +1042,52 @@ a {
 .footer .wrapper--3 {
   text-transform: uppercase;
   color: #675B29;
-  font-size: .8rem;
+  font-size: 0.8rem;
   letter-spacing: 3px;
   padding-bottom: 20px;
 }
 
 .footer .wrapper--3 > div {
   margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .footer i {
+    width: 25px;
+    height: 25px;
+  }
+  .footer .wrapper--2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-items: center;
+    align-items: center;
+  }
+  .footer .wrapper--2 .wrapper__contact {
+    text-align: left;
+  }
+  .footer .wrapper--2 .hl {
+    height: 150px;
+    margin: 0 .4rem;
+    width: 2px;
+  }
+  .footer .wrapper--2 .wedding-photographer {
+    margin-top: 0;
+  }
+  .footer .wrapper--2 .wrapper__box {
+    flex: 1;
+  }
+  .footer .wrapper--2 .wrapper__box:nth-of-type(2) {
+    flex: 2;
+  }
+  .footer .footer__nav {
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+  }
+  .footer .footer__nav li {
+    margin-bottom: 0;
+  }
+  .footer .wrapper--3 {
+    display: flex;
+    justify-content: space-between;
+  }
 }
