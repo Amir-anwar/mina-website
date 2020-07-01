@@ -17,7 +17,7 @@ lightbox.option({
 });
 
 (function() {
-  if (window.innerWidth > 400) {
+  if (window.innerWidth > 992) {
     const Scrollbar = window.Scrollbar;
 
     Scrollbar.use(window.OverscrollPlugin);
