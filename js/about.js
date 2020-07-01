@@ -1,21 +1,5 @@
 /* eslint-disable require-jsdoc */
 // extention set up
-const glide = new Glide('.glide', {
-  type: 'carousel',
-  autoplay: 4000,
-  hoverpause: false,
-  gap: 0,
-});
-
-glide.mount();
-
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true,
-  'alwaysShowNavOnTouchDevices': true,
-  'disableScrolling': true,
-});
-
 (function() {
   if (window.innerWidth > 400) {
     const Scrollbar = window.Scrollbar;
@@ -29,7 +13,6 @@ lightbox.option({
     });
   }
 })();
-
 
 // menu btn toggle
 const menuBtn = document.querySelector('.menu-btn');
