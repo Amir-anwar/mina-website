@@ -768,6 +768,28 @@ a {
   width: 350px;
 }
 
+.navbar--web {
+  position: relative;
+  color: #000;
+}
+
+.navbar--web .nav {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.navbar--web .menu-branding a img {
+  width: 300px;
+}
+
+.navbar-container .container .menu-btn .btn-line {
+  background-color: #141414;
+}
+
+.navbar-container {
+  position: relative;
+}
+
 .footer {
   text-align: center;
   padding-top: 3.5rem;

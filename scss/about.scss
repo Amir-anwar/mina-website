@@ -10,5 +10,26 @@
 
 @import 'layout/header';
 
+.navbar--web {
+  position: relative;
+  color: #000;
+
+  .nav {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+  }
+
+  .menu-branding a img {
+    width: 300px;
+  }
+}
+
+.navbar-container .container .menu-btn .btn-line {
+  background-color: $darkColor;
+}
+
+.navbar-container {
+  position: relative;
+}
 
 @import 'layout/footer';
