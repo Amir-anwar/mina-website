@@ -633,7 +633,7 @@ html {
 
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 ul {
