@@ -870,6 +870,28 @@ a {
   width: 100%;
 }
 
+@media (max-width: 480px) {
+  .about-me__container {
+    flex-flow: column wrap;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-me__container .main-title {
+    font-size: 1.5rem;
+  }
+  .about-me__container .wrapper:nth-of-type(1) {
+    order: 2;
+  }
+  .about-me__container .wrapper:nth-of-type(2) {
+    order: 1s;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-me .btn {
+    margin-top: 2rem;
+  }
+}
+
 .footer {
   text-align: center;
   padding-top: 3.5rem;
