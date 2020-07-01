@@ -6,6 +6,45 @@
   font-size: $main-h;
 }
 
+.main-title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: $main-h;
+  letter-spacing: 0.048em;
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background-color: $primaryColor;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) rotate(30deg);
+    width: 30px;
+    height: 2px;
+    background-color: $primaryColor;
+  }
+}
+
+.main-paragraph {
+  font-family: "Sorts Mill Goudy", serif;
+  letter-spacing: 0.103em;
+  line-height: 25px;
+  font-size: 18px;
+}
+
 .h2 {
   font-size: $second-h;
   font-family: "Open Sans", sans-serif;

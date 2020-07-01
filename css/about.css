@@ -445,6 +445,45 @@ a {
   font-size: 1.7rem;
 }
 
+.main-title {
+  font-family: "Sorts Mill Goudy", serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.048em;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.main-title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background-color: #675B29;
+}
+
+.main-title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(30deg);
+  width: 30px;
+  height: 2px;
+  background-color: #675B29;
+}
+
+.main-paragraph {
+  font-family: "Sorts Mill Goudy", serif;
+  letter-spacing: 0.103em;
+  line-height: 25px;
+  font-size: 18px;
+}
+
 .h2 {
   font-size: 1.3rem;
   font-family: "Open Sans", sans-serif;
@@ -774,8 +813,8 @@ a {
 }
 
 .navbar--web .nav {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .navbar--web .menu-branding a img {
@@ -788,6 +827,47 @@ a {
 
 .navbar-container {
   position: relative;
+}
+
+.about-me {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-me .main-title {
+  margin: 2rem;
+}
+
+.about-me .paragraph {
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.072rem;
+}
+
+.about-me p {
+  margin-bottom: 1rem;
+}
+
+.about-me__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me__container .wrapper {
+  flex-basis: 25%;
+}
+
+.about-me__container .wrapper:nth-of-type(2) {
+  flex-basis: 50%;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.about-me__container .wrapper img {
+  width: 100%;
 }
 
 .footer {
