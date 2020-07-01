@@ -1,15 +1,18 @@
 /* eslint-disable require-jsdoc */
 // extention set up
-const Scrollbar = window.Scrollbar;
+(function() {
+  if (window.innerWidth > 400) {
+    const Scrollbar = window.Scrollbar;
 
-Scrollbar.use(window.OverscrollPlugin);
+    Scrollbar.use(window.OverscrollPlugin);
 
-Scrollbar.init(document.querySelector('#my-scrollbar'), {
-  plugins: {
-    overscroll: {effect: 'glow'},
-  },
-});
-Scrollbar.initAll();
+    Scrollbar.init(document.querySelector('#my-scrollbar'), {
+      plugins: {
+        overscroll: {effect: 'glow'},
+      },
+    });
+  }
+})();
 
 // menu btn toggle
 const menuBtn = document.querySelector('.menu-btn');
