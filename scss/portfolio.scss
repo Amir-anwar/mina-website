@@ -33,4 +33,18 @@
   position: relative;
 }
 
+.featured {
+  text-align: center;
+
+  .main-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .btn {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
 @import "layout/footer";

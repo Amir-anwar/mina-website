@@ -650,6 +650,7 @@ a {
   letter-spacing: 0.048em;
   position: relative;
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 .main-title::before {
@@ -789,7 +790,7 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   grid-gap: 10px;
-  grid-auto-flow: dense;
+  grid-auto-flow: row dense;
 }
 
 @media (min-width: 992px) {
@@ -994,12 +995,17 @@ a {
 }
 
 .navbar--web .nav .nav-item:not(:last-of-type) {
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .navbar--web .nav .nav-item .nav-link {
   text-transform: uppercase;
   font-size: 1.2rem;
+}
+
+.navbar--web .menu-branding {
+  position: relative;
+  left: -20px;
 }
 
 .navbar--web .menu-branding a img {
@@ -1026,6 +1032,20 @@ a {
 
 .navbar-container {
   position: relative;
+}
+
+.featured {
+  text-align: center;
+}
+
+.featured .main-title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.featured .btn {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .footer {
