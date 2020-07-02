@@ -149,7 +149,7 @@
       display: inline-block;
 
       &:not(:last-of-type) {
-        margin-right: 1rem;
+        margin-right: 3rem;
       }
 
       .nav-link {
@@ -160,6 +160,8 @@
   }
 
   .menu-branding {
+    position: relative;
+    left: -20px;
     a {
       img {
         width: 350px;
