@@ -71,7 +71,6 @@
       }
       filter: blur(22px);
       mix-blend-mode: luminosity;
-
     }
 
     .mask__contact-info {
@@ -131,6 +130,75 @@
           width: 100%;
           height: 100%;
         }
+      }
+    }
+  }
+}
+
+.form-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+    letter-spacing: 0.137em;
+    font-size: 27px;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.264em;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    .btn {
+      align-self: center;
+      cursor: pointer;
+    }
+
+    .form-input__wrapper {
+      input,
+      textarea {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $primaryColor;
+        text-align: center;
+        font-family: "Sorts Mill Goudy", serif;
+        letter-spacing: 0.164em;
+        padding: .5rem;
+      }
+
+      textarea {
+        resize: none;
+        height: 100px;
+      }
+
+      label {
+        display: block;
+        font-family: "Sorts Mill Goudy", serif;
+      }
+
+      &:nth-of-type(1) {
+        flex-basis: 47%;
+      }
+      &:nth-of-type(2) {
+        flex-basis: 47%;
+      }
+      &:nth-of-type(3) {
+        flex-basis: 100%;
+        margin-top: 30px;
+      }
+      &:nth-of-type(4) {
+        margin: 20px auto;
       }
     }
   }
