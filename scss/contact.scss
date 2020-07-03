@@ -1,0 +1,14 @@
+// libraries
+@import 'libs/normalize';
+
+// my strucure
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/global';
+
+@import 'components/components';
+
+@import 'layout/header';
+
+
+@import 'layout/footer';
