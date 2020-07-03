@@ -1,14 +1,139 @@
 // libraries
-@import 'libs/normalize';
+@import "libs/normalize";
 
 // my strucure
-@import 'helpers/variables';
-@import 'helpers/mixins';
-@import 'helpers/global';
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/global";
 
-@import 'components/components';
+@import "components/components";
 
-@import 'layout/header';
+@import "layout/header";
 
+.contact-hero {
+  height: 100vh;
+  background: {
+    image: url(../images/contact.jpg);
+    position: -0% -12px;
+    size: 110vw;
+  }
 
-@import 'layout/footer';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .contact__par {
+    font-size: 18px;
+    letter-spacing: 0.015em;
+    line-height: 28px;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #fff;
+    margin-left: 7rem;
+    width: 400px;
+  }
+
+  .mask-contact {
+    margin-right: 7rem;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    padding: 35px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .mask {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      clip-path: polygon(
+        0% 0%,
+        0% 100%,
+        8% 100%,
+        8% 7%,
+        90% 7%,
+        91% 94%,
+        4% 94%,
+        8% 100%,
+        100% 100%,
+        100% 0%
+      );
+      width: 350px;
+      height: 350px;
+      // background-color: #bebebe;
+      background: {
+        image: url(../images/contact.jpg);
+        position: 76% 44%;
+        size: 110vw;
+      }
+      filter: blur(22px);
+      mix-blend-mode: luminosity;
+
+    }
+
+    .mask__contact-info {
+      overflow: hidden;
+      text-align: center;
+
+      h2,
+      h3 {
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 2rem;
+      }
+
+      .hl {
+        background-color: #fff;
+        width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .cta {
+    position: absolute;
+    left: 7rem;
+    bottom: 4rem;
+    text-transform: uppercase;
+    font-family: "Sorts Mill Goudy", serif;
+    color: #fff;
+    line-height: 0px;
+    letter-spacing: 0.142em;
+    font-size: 14px;
+
+    i {
+      position: relative;
+      top: 3px;
+      right: 3px;
+
+      img {
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .social-media-icons {
+    display: flex;
+    width: 100px;
+    margin: 20px auto;
+    justify-content: space-around;
+
+    i {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      position: relative;
+      a {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@import "layout/footer";
