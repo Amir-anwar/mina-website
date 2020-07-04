@@ -881,6 +881,53 @@ a {
   position: relative;
 }
 
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #F2F2F2;
+}
+
+.hero .hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .hero__text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero .hero__text p {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+
+.hero .hero__text p:not(:first-of-type) {
+  margin-top: .75rem;
+}
+
+.hero .hero__text .cta {
+  color: #675B29;
+  text-transform: uppercase;
+}
+
+.hero .hero__img-container {
+  flex-basis: 50%;
+  height: 300px;
+}
+
+.hero .hero__img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .footer {
   text-align: center;
   padding-top: 3.5rem;

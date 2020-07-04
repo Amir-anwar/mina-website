@@ -32,6 +32,52 @@
   position: relative;
 }
 
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: $bgColor;
 
+  .hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero__text {
+    h1 {
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: 2.7rem;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 400;
+      margin-bottom: .5rem;
+
+      &:not(:first-of-type) {
+        margin-top: .75rem;
+      }
+    }
+
+    .cta {
+      color: $primaryColor;
+      text-transform: uppercase;
+    }
+  }
+
+  .hero__img-container {
+    flex-basis: 50%;
+    height: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}
 
 @import "layout/footer";
