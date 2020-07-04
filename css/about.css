@@ -881,69 +881,6 @@ a {
   position: relative;
 }
 
-.about-me {
-  text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.about-me .main-title {
-  margin: 2rem;
-}
-
-.about-me .paragraph {
-  font-size: 14px;
-  line-height: 28px;
-  letter-spacing: 0.072rem;
-}
-
-.about-me p {
-  margin-bottom: 1rem;
-}
-
-.about-me__container {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-me__container .wrapper {
-  flex-basis: 25%;
-}
-
-.about-me__container .wrapper:nth-of-type(2) {
-  flex-basis: 50%;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.about-me__container .wrapper img {
-  width: 100%;
-}
-
-@media (max-width: 480px) {
-  .about-me__container {
-    flex-flow: column wrap;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .about-me__container .main-title {
-    font-size: 1.5rem;
-  }
-  .about-me__container .wrapper:nth-of-type(1) {
-    order: 2;
-  }
-  .about-me__container .wrapper:nth-of-type(2) {
-    order: 1s;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .about-me .btn {
-    margin-top: 2rem;
-  }
-}
-
 .footer {
   text-align: center;
   padding-top: 3.5rem;
