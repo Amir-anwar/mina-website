@@ -337,6 +337,34 @@ template {
   display: none;
 }
 
+.loader__container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  transition: all .1s ease-in-out;
+  display: grid;
+  place-items: center;
+  z-index: 9999999;
+  background: #0f2027;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+.loader__container .loader {
+  background: #bdc3c7;
+  height: 3em;
+  width: 3em;
+  animation: loadit 4s linear infinite;
+}
+
+@keyframes loadit {
+  55% {
+    background: rgba(189, 195, 199, 0.4);
+    border-radius: 100%;
+    transform: rotate(360deg);
+    box-shadow: 7em 0 0 rgba(189, 195, 199, 0.3), -7em 0 0 rgba(189, 195, 199, 0.3), 3em 0 0 rgba(189, 195, 199, 0.3), -3em 0 0 rgba(189, 195, 199, 0.3), 0 7em 0 rgba(189, 195, 199, 0.3), 0 -7em 0 rgba(189, 195, 199, 0.3), 0 3em 0 rgba(189, 195, 199, 0.3), 0 -3em 0 rgba(189, 195, 199, 0.3);
+  }
+}
+
 #my-scrollbar {
   width: 100vw;
   height: 100vh;
@@ -355,7 +383,7 @@ template {
 
 html {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -389,7 +417,7 @@ h6 {
   margin: 0;
   padding: 0;
   font-weight: normal;
-  font-family: 'Sorts Mill Goudy', serif;
+  font-family: "Sorts Mill Goudy", serif;
 }
 
 p {
@@ -399,7 +427,7 @@ p {
 
 a {
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
   outline: none;
 }
@@ -929,7 +957,7 @@ a {
   width: 100%;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 992px) {
   .about-me__container {
     flex-flow: column wrap;
     padding-left: 15px;
@@ -942,7 +970,7 @@ a {
     order: 2;
   }
   .about-me__container .wrapper:nth-of-type(2) {
-    order: 1s;
+    order: 1;
     padding-left: 10px;
     padding-right: 10px;
   }
