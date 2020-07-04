@@ -193,9 +193,47 @@
   .ps {
     color: $primaryColor;
     text-align: center;
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: block;
     margin: auto;
+  }
+}
+
+.printings {
+  background-color: #fff;
+  padding: $section-padding 0;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+
+    .wrapper {
+      background-color: $bgColor;
+      padding: 3rem;
+      ul {
+        margin-top: 20px;
+        padding: 1rem;
+        padding-left: 3rem;
+        height: 80%;
+        list-style: none;
+        border-radius: 9px;
+
+        li {
+          margin-bottom: 1.5rem;
+          font-weight: bold;
+          font-size: 0.9rem;
+
+          &::before {
+            content: "\2022";
+            color: $primaryColor;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+      }
+    }
   }
 }
 
