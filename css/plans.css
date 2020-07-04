@@ -893,6 +893,13 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  .hero .hero__container {
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+}
+
 .hero .hero__text h1 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
@@ -928,10 +935,19 @@ a {
   border-radius: 20px;
 }
 
+@media (max-width: 992px) {
+  .hero .hero__img-container {
+    margin-top: 2rem;
+  }
+  .hero .hero__img-container img {
+    border-radius: 0;
+  }
+}
+
 .wedding-plans {
   background-color: #F2F2F2;
-  padding: 3.5rem;
-  padding: 3.5rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
   text-align: center;
 }
 
@@ -948,9 +964,26 @@ a {
   justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  .wedding-plans .wedding-plans__table {
+    justify-content: center;
+    flex-flow: column wrap;
+  }
+}
+
 .wedding-plans .wedding-plans__table .table__cell {
   flex-basis: 30%;
   text-align: left;
+}
+
+@media (max-width: 992px) {
+  .wedding-plans .wedding-plans__table .table__cell {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+  .wedding-plans .wedding-plans__table .table__cell:nth-of-type(2) {
+    order: -1;
+  }
 }
 
 .wedding-plans .wedding-plans__table .table__cell .cell__title {
@@ -964,7 +997,7 @@ a {
   background-color: #fff;
   padding: 1rem;
   padding-left: 3rem;
-  height: 80%;
+  height: 75%;
   list-style: none;
   border-radius: 9px;
 }
@@ -985,7 +1018,8 @@ a {
 }
 
 .wedding-plans .wedding-plans__table .table__cell ul.contrast-color {
-  background-color: #a99543;
+  background: #cc2b5e;
+  background: linear-gradient(to right, #753a88, #cc2b5e);
   color: #fff;
 }
 
@@ -1007,12 +1041,26 @@ a {
   background-color: #F2F2F2;
 }
 
+@media (max-width: 992px) {
+  .extra-notes {
+    padding: 1rem 0;
+  }
+}
+
 .extra-notes .wrapper {
   background-color: #fff;
   padding: 3rem;
   width: 80%;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (max-width: 992px) {
+  .extra-notes .wrapper {
+    width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .extra-notes ul {
@@ -1057,9 +1105,24 @@ a {
   justify-content: space-around;
 }
 
+@media (max-width: 992px) {
+  .printings .container {
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+}
+
 .printings .container .wrapper {
   background-color: #F2F2F2;
   padding: 3rem;
+}
+
+@media (max-width: 992px) {
+  .printings .container .wrapper {
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    padding-bottom: 0;
+  }
 }
 
 .printings .container .wrapper ul {
