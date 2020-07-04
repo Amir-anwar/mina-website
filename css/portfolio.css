@@ -536,34 +536,6 @@ body.lb-disable-scrolling {
   opacity: 1;
 }
 
-.loader__container {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  transition: all .1s ease-in-out;
-  display: grid;
-  place-items: center;
-  z-index: 9999999;
-  background: #0f2027;
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
-}
-
-.loader__container .loader {
-  background: #bdc3c7;
-  height: 3em;
-  width: 3em;
-  animation: loadit 4s linear infinite;
-}
-
-@keyframes loadit {
-  55% {
-    background: rgba(189, 195, 199, 0.4);
-    border-radius: 100%;
-    transform: rotate(360deg);
-    box-shadow: 7em 0 0 rgba(189, 195, 199, 0.3), -7em 0 0 rgba(189, 195, 199, 0.3), 3em 0 0 rgba(189, 195, 199, 0.3), -3em 0 0 rgba(189, 195, 199, 0.3), 0 7em 0 rgba(189, 195, 199, 0.3), 0 -7em 0 rgba(189, 195, 199, 0.3), 0 3em 0 rgba(189, 195, 199, 0.3), 0 -3em 0 rgba(189, 195, 199, 0.3);
-  }
-}
-
 #my-scrollbar {
   width: 100vw;
   height: 100vh;

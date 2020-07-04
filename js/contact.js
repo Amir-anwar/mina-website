@@ -42,14 +42,3 @@ function toggleMenu() {
 };
 
 menuBtn.addEventListener('click', toggleMenu);
-
-// loader
-const loader = document.querySelector('.loader__container');
-
-window.onload = function() {
-  loader.style.opacity = '0';
-};
-
-loader.addEventListener('transitionend', () => {
-  loader.style.display = 'none';
-});
