@@ -1215,7 +1215,7 @@ a {
     flex: 1;
   }
   .footer .wrapper--2 .wrapper__box:nth-of-type(2) {
-    flex: 2;
+    flex: 1.8;
   }
   .footer .footer__nav {
     flex-flow: row nowrap;
