@@ -870,6 +870,17 @@ a {
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .contact-hero {
+    background-image: url(../images/contact.jpg);
+    background-position: 40% 50%;
+    background-size: cover;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .contact-hero .contact__par {
   font-size: 18px;
   letter-spacing: 0.015em;
@@ -878,6 +889,19 @@ a {
   color: #fff;
   margin-left: 7rem;
   width: 400px;
+}
+
+@media (max-width: 992px) {
+  .contact-hero .contact__par {
+    margin-left: 0;
+    margin-right: 0;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.43px;
+  }
 }
 
 .contact-hero .mask-contact {
@@ -890,6 +914,12 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .contact-hero .mask-contact {
+    margin: 3rem 0;
+  }
 }
 
 .contact-hero .mask-contact .mask {
@@ -937,6 +967,14 @@ a {
   font-size: 14px;
 }
 
+@media (max-width: 992px) {
+  .contact-hero .cta {
+    position: relative;
+    left: 0;
+    bottom: 0;
+  }
+}
+
 .contact-hero .cta i {
   position: relative;
   top: 3px;
@@ -945,6 +983,8 @@ a {
 
 .contact-hero .cta i img {
   transform: rotate(90deg);
+  animation: upAndDown 1s ease-in-out .3s infinite;
+  transition: all .3s ease-out;
 }
 
 .contact-hero .social-media-icons {
@@ -964,6 +1004,24 @@ a {
 .contact-hero .social-media-icons i a img {
   width: 100%;
   height: 100%;
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(70deg);
+  }
+  50% {
+    transform: translateY(-2px) rotate(90deg);
+  }
+  75% {
+    transform: translateY(-7px) rotate(110deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
 }
 
 .form-container {
@@ -1006,7 +1064,7 @@ a {
   text-align: center;
   font-family: "Sorts Mill Goudy", serif;
   letter-spacing: 0.164em;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .form-container form .form-input__wrapper textarea {
@@ -1023,8 +1081,22 @@ a {
   flex-basis: 47%;
 }
 
+@media (max-width: 992px) {
+  .form-container form .form-input__wrapper:nth-of-type(1) {
+    flex-basis: 100%;
+    margin: 3rem 0;
+  }
+}
+
 .form-container form .form-input__wrapper:nth-of-type(2) {
   flex-basis: 47%;
+}
+
+@media (max-width: 992px) {
+  .form-container form .form-input__wrapper:nth-of-type(2) {
+    flex-basis: 100%;
+    margin: 1xzvfdsfsddrem 0;
+  }
 }
 
 .form-container form .form-input__wrapper:nth-of-type(3) {

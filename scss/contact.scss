@@ -23,6 +23,17 @@
   align-items: center;
   position: relative;
 
+  @media #{$downSMDesktop} {
+    background: {
+      image: url(../images/contact.jpg);
+      position: 40% 50%;
+      size: cover;
+    }
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
   .contact__par {
     font-size: 18px;
     letter-spacing: 0.015em;
@@ -31,6 +42,17 @@
     color: #fff;
     margin-left: 7rem;
     width: 400px;
+
+    @media #{$downSMDesktop} {
+      margin-left: 0;
+      margin-right: 0;
+      width: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.43px;
+    }
   }
 
   .mask-contact {
@@ -43,6 +65,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media #{$downSMDesktop} {
+      margin: 3rem 0;
+    }
 
     .mask {
       position: absolute;
@@ -103,13 +129,22 @@
     letter-spacing: 0.142em;
     font-size: 14px;
 
+    @media #{$downSMDesktop} {
+      position: relative;
+      left: 0;
+      bottom: 0;
+    }
+
     i {
       position: relative;
       top: 3px;
       right: 3px;
-
+      
       img {
         transform: rotate(90deg);
+        
+        animation: upAndDown 1s ease-in-out .3s infinite;
+        @include easeout;
       }
     }
   }
@@ -132,6 +167,24 @@
         }
       }
     }
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0) rotate(90deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(70deg);
+  }
+  50% {
+    transform: translateY(-2px) rotate(90deg);
+  }
+  75% {
+    transform: translateY(-7px) rotate(110deg);
+  }
+  100% {
+    transform: translateY(0) rotate(90deg);
   }
 }
 
@@ -174,7 +227,7 @@
         text-align: center;
         font-family: "Sorts Mill Goudy", serif;
         letter-spacing: 0.164em;
-        padding: .5rem;
+        padding: 0.5rem;
       }
 
       textarea {
@@ -189,9 +242,17 @@
 
       &:nth-of-type(1) {
         flex-basis: 47%;
+        @media #{$downSMDesktop} {
+          flex-basis: 100%;
+          margin: 3rem 0;
+        }
       }
       &:nth-of-type(2) {
         flex-basis: 47%;
+        @media #{$downSMDesktop} {
+          flex-basis: 100%;
+          margin: 1xzvfdsfsddrem 0;
+        }
       }
       &:nth-of-type(3) {
         flex-basis: 100%;
