@@ -32,5 +32,72 @@
   position: relative;
 }
 
+.about-me {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .main-title {
+    margin: 2rem;
+  }
+
+  .paragraph {
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.072rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper {
+      flex-basis: 25%;
+
+      &:nth-of-type(2) {
+        flex-basis: 50%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media #{$downPhone} {
+    &__container {
+      flex-flow: column wrap;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      .main-title {
+        font-size: 1.5rem;
+      }
+
+      .wrapper {
+        &:nth-of-type(1) {
+          order: 2;
+        }
+        &:nth-of-type(2) {
+          order: 1s;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 2rem;
+    }
+  }
+}
 
 @import "layout/footer";
