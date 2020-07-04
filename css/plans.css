@@ -904,11 +904,11 @@ a {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .hero .hero__text p:not(:first-of-type) {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .hero .hero__text .cta {
@@ -926,6 +926,125 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+}
+
+.wedding-plans {
+  background-color: #F2F2F2;
+  padding: 3.5rem;
+  padding: 3.5rem;
+  text-align: center;
+}
+
+.wedding-plans .offer {
+  background-color: #EA2027;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+.wedding-plans .wedding-plans__table {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wedding-plans .wedding-plans__table .table__cell {
+  flex-basis: 30%;
+  text-align: left;
+}
+
+.wedding-plans .wedding-plans__table .table__cell .cell__title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.wedding-plans .wedding-plans__table .table__cell ul {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 1rem;
+  padding-left: 3rem;
+  height: 80%;
+  list-style: none;
+  border-radius: 9px;
+}
+
+.wedding-plans .wedding-plans__table .table__cell ul li {
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.wedding-plans .wedding-plans__table .table__cell ul li::before {
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.wedding-plans .wedding-plans__table .table__cell ul.contrast-color {
+  background-color: #a99543;
+  color: #fff;
+}
+
+.wedding-plans .wedding-plans__table .table__cell ul.contrast-color li::before {
+  color: #fff;
+}
+
+.section-title {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.074em;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.extra-notes {
+  padding: 3.5rem 0;
+  background-color: #F2F2F2;
+}
+
+.extra-notes .wrapper {
+  background-color: #fff;
+  padding: 3rem;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.extra-notes ul {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 1rem;
+  padding-left: 3rem;
+  height: 80%;
+  list-style: none;
+  border-radius: 9px;
+}
+
+.extra-notes ul li {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.extra-notes ul li::before {
+  content: "\2022";
+  color: #675B29;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.extra-notes .ps {
+  color: #675B29;
+  text-align: center;
+  font-size: .8rem;
+  display: block;
+  margin: auto;
 }
 
 .footer {

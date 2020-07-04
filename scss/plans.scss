@@ -54,10 +54,10 @@
       font-size: 18px;
       line-height: 22px;
       font-weight: 400;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
 
       &:not(:first-of-type) {
-        margin-top: .75rem;
+        margin-top: 0.75rem;
       }
     }
 
@@ -77,6 +77,125 @@
       object-fit: cover;
       border-radius: 20px;
     }
+  }
+}
+
+.wedding-plans {
+  background-color: $bgColor;
+  padding: $section-padding;
+  padding: $section-padding;
+  text-align: center;
+
+  .offer {
+    background-color: $redColor;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .wedding-plans__table {
+    display: flex;
+    justify-content: space-between;
+
+    .table__cell {
+      flex-basis: 30%;
+      text-align: left;
+
+      .cell__title {
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        font-size: 1.4rem;
+      }
+
+      ul {
+        margin-top: 20px;
+        background-color: #fff;
+        padding: 1rem;
+        padding-left: 3rem;
+        height: 80%;
+        list-style: none;
+        border-radius: 9px;
+
+        li {
+          margin-bottom: 1.5rem;
+          font-weight: bold;
+          font-size: 0.9rem;
+
+          &::before {
+            content: "\2022";
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+          }
+        }
+
+        &.contrast-color {
+          background-color: lighten($primaryColor, 18%);
+          color: #fff;
+          li {
+            &::before {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.section-title {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: $section-padding;
+  text-transform: uppercase;
+  letter-spacing: 0.074em;
+  font-size: 2.1rem;
+  text-align: center;
+}
+
+.extra-notes {
+  padding: $section-padding 0;
+  background-color: $bgColor;
+
+  .wrapper {
+    background-color: #fff;
+    padding: 3rem;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  ul {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 1rem;
+    padding-left: 3rem;
+    height: 80%;
+    list-style: none;
+    border-radius: 9px;
+
+    li {
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+
+      &::before {
+        content: "\2022";
+        color: $primaryColor;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+
+  .ps {
+    color: $primaryColor;
+    text-align: center;
+    font-size: .8rem;
+    display: block;
+    margin: auto;
   }
 }
 
