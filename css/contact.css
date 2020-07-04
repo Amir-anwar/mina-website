@@ -1156,3 +1156,8 @@ a {
     justify-content: space-between;
   }
 }
+
+span.red-heart {
+  color: red;
+  font-size: 1.1rem;
+}
