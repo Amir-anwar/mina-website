@@ -905,6 +905,12 @@ a {
   z-index: 3;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar-container .container .menu-branding--out {
+    width: 250px;
+  }
+}
+
 .navbar-container .container .menu-branding--out a img {
   width: 100%;
   height: 100%;
