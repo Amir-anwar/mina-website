@@ -40,6 +40,14 @@
                   background-image: url(../images/slider/slider-3.jpg);
                 }
               }
+              &--4 {
+                background-image: url(../images/slider/slider-m-4.jpg);
+                background-position: center center;
+                @media (min-width: 992px) {
+                    background-image: url(../images/slider/slider-4.jpg);
+                }
+              }
+
             }
           }
         }
@@ -115,13 +123,13 @@
   }
 
   @media #{$upTaplet} {
-      .about-me__wrapper {
-        &:nth-of-type(2) {
-          img {
-            height: 100%;
-          }
+    .about-me__wrapper {
+      &:nth-of-type(2) {
+        img {
+          height: 100%;
         }
       }
+    }
   }
 
   @media #{$upSMDesktop} {

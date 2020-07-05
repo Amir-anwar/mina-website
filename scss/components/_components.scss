@@ -191,6 +191,9 @@
     }
     &--18 {
       grid-row: span 2;
+      &__image {
+        object-position: top center;
+      }
     }
     &--19 {
       grid-row: span 2;

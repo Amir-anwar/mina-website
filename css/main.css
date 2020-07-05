@@ -606,6 +606,15 @@ template {
   overflow: auto;
 }
 
+input,
+textarea,
+button,
+select,
+a,
+div {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 :root {
   font-size: 16px;
 }
@@ -909,6 +918,10 @@ a {
   grid-row: span 2;
 }
 
+.grid__item--18__image {
+  object-position: top center;
+}
+
 .grid__item--19 {
   grid-row: span 2;
   grid-column: span 2;
@@ -1070,7 +1083,7 @@ a {
 .menu .menu-nav .nav-item .nav-link {
   color: #E9E9E9;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 25px;
 }
 
 .menu .menu-nav .nav-item:nth-child(1) {
@@ -1171,6 +1184,17 @@ a {
 @media (min-width: 992px) {
   .slider .glide__track .glide__slides .glide__slide .slide__image .bg-image--3 {
     background-image: url(../images/slider/slider-3.jpg);
+  }
+}
+
+.slider .glide__track .glide__slides .glide__slide .slide__image .bg-image--4 {
+  background-image: url(../images/slider/slider-m-4.jpg);
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  .slider .glide__track .glide__slides .glide__slide .slide__image .bg-image--4 {
+    background-image: url(../images/slider/slider-4.jpg);
   }
 }
 
